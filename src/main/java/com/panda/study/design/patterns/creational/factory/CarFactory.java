@@ -1,5 +1,6 @@
 package com.panda.study.design.patterns.creational.factory;
 
+import com.panda.study.design.patterns.contract.enums.CarType;
 import com.panda.study.design.patterns.contract.exception.NotFoundException;
 
 public class CarFactory {

@@ -1,5 +1,7 @@
 package com.panda.study.design.patterns.creational.abstractfactory;
 
+import com.panda.study.design.patterns.contract.enums.CarType;
+import com.panda.study.design.patterns.contract.enums.Location;
 import lombok.Data;
 
 @Data

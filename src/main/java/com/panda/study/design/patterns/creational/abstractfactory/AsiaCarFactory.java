@@ -1,7 +1,9 @@
 package com.panda.study.design.patterns.creational.abstractfactory;
 
 import static com.panda.study.design.patterns.creational.abstractfactory.DefaultCarFactory.getCar;
-import static com.panda.study.design.patterns.creational.abstractfactory.Location.ASIA;
+import static com.panda.study.design.patterns.contract.enums.Location.ASIA;
+
+import com.panda.study.design.patterns.contract.enums.CarType;
 
 public class AsiaCarFactory {
 

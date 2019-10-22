@@ -1,4 +1,4 @@
-package com.panda.study.design.patterns.creational.abstractfactory;
+package com.panda.study.design.patterns.contract.enums;
 
 import lombok.Getter;
 

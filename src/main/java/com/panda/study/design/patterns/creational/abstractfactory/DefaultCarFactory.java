@@ -1,7 +1,9 @@
 package com.panda.study.design.patterns.creational.abstractfactory;
 
-import static com.panda.study.design.patterns.creational.abstractfactory.Location.DEFAULT;
+import static com.panda.study.design.patterns.contract.enums.Location.DEFAULT;
 
+import com.panda.study.design.patterns.contract.enums.CarType;
+import com.panda.study.design.patterns.contract.enums.Location;
 import com.panda.study.design.patterns.contract.exception.NotFoundException;
 
 public class DefaultCarFactory {
