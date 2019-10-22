@@ -24,7 +24,7 @@ public abstract class Car {
 
   @Override
   public String toString() {
-    return "Model- "+model + " built in "+location;
+    return "Model- " + model + " built in " + location;
   }
 
 }

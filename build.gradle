@@ -2,6 +2,7 @@ plugins {
     id 'org.springframework.boot' version '2.1.9.RELEASE'
     id 'io.spring.dependency-management' version '1.0.8.RELEASE'
     id 'java'
+    id 'checkstyle'
 }
 
 group = 'com.panda.study'
@@ -32,4 +33,19 @@ copy {
     from "./config/githooks/"
     into "./.git/hooks/"
     fileMode 0755
+}
+
+checkstyle {
+    toolVersion '8.1'
+    ignoreFailures = false
+    configFile file("$project.rootDir/config/checkstyle/google_checks.xml")
+    sourceSets = [sourceSets.main]
+
+    checkstyleMain {
+        source = 'src/main/java'
+    }
+    checkstyleTest {
+        source = 'src/test/java'
+    }
+    checkstyleMain.exclude '**/enums/*.java'
 }
